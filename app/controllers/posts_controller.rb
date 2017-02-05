@@ -7,7 +7,7 @@ class PostsController < ApplicationController
       @post = Post.new
     end
 
-    def creat
+    def create
       @group = Group.find(params[:group_id])
       @post = Post.new(post_params)
       @post.group = @group
